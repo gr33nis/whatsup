@@ -1,0 +1,17 @@
+<h2>Current Projects</h2>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Project</th>
+        <th>Project Manager</th>
+        <Th>Summary</Th>
+    </tr>
+    
+    <% @projects.each do |project| %>
+        <tr>
+            <td><%= project.name %></td>
+            <td><%= project.manager %></td>
+            <td><%= project.summary %></td>
+        </tr>
+    <% end %>
+</table>
